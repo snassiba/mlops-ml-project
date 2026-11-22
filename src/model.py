@@ -5,4 +5,7 @@ def build_model(cfg: dict):
     name = cfg["model"].get("name", "logistic_regression")
     if name != "logistic_regression":
         raise ValueError(f"Modele non supporte : {name}")
-    return LogisticRegression(max_iter=int(cfg["model"].get("max_iter", 2000)))
+    return LogisticRegression(
+        max_iter=int(cfg["model"].get("max_iter", 2000)),
+        C=float(cfg["model"].get("C", 1.0)),
+    )
