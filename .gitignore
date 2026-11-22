@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Donnees et artefacts (non commites)
+data/
+artifacts/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
